@@ -1,0 +1,533 @@
+/***************************************************************************************************************************
+
+for colors visit coolors.co
+                         
+                  greenish blue : #34c6d3 (buttons icons links line ans background)
+                  steel grey      :#41464b (headings)
+                  Blue Bayoux     :#64707b(pargraphs)
+                  white            :#fff (text backg)
+                  black            :#000
+
+fontisome.io                   for free set of icons
+animate.css has a bunch of good animation
+using wow.css for animation on scrolling
+awl.crowsel.js for slider
+******************************************************************************************************************************/
+html,
+body {
+    height: 100%;
+}
+
+body {
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+
+
+}
+.w{
+    color: white;
+}
+h3  {
+    color: #41464b;
+    text-transform: uppercase;
+}
+
+p {
+    color: #64707b;
+    font-weight: 300px;
+}
+
+/******************************************************************************************************************************
+                                HOME
+***************************************************************************************************************************/
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    background-image: url("../img/bg-home.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*parallax effect*/
+    background-attachment: fixed;
+}
+
+#home-content-box {
+
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    /**also have bootstrap defined classes for allignment like class="text-center"/ "text-justify"**/
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700i;
+    margin: 20px 0 20px 0;
+
+
+}
+
+/***************************************************************************************************
+           General Parallax
+****************************************************************************************************/
+.bg-parallax {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/****************************************************************************************************
+                 BUTTONS
+*****************************************************************************************************/
+.btn-general {
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    color: white;
+
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: white;
+    color: #41464b;
+}
+
+.btn-blue {
+    border-color: #34c6d3;
+    color: #34c6d3;
+
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #34c6d3;
+    color: blanchedalmond;
+}
+
+/**********************************************************************************************************************
+                              ANIMATIONS
+***********************************************************************************************************************/
+#home-cover {
+    animation-delay: 0.1s;
+    animation-duration: 0.3s;
+}
+
+#home-heading {
+    animation-delay: 0.4s;
+    animation-duration: 0.3s;
+}
+
+#home-btn {
+    animation-delay: 0.7s;
+    animation-duration: 0.3s;
+}
+
+/****************************************************************************************************
+                 CONTENT BOX
+*****************************************************************************************************/
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0 0 15px 0;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px auto;
+}
+
+/****************************************************************************************************
+                 SERVICES
+*****************************************************************************************************/
+#service {
+    margin-top: 25px;
+}
+
+.service-item {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon {
+    color: #34c6d3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon {
+    color: #fff;
+    background-color: #34c6d3;
+    background-size: cover;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item-title p {
+    margin: 0;
+    padding-left: 85px;
+}
+
+.content-title-white h3 {
+    color: white;
+}
+
+/****************************************************************************************************
+               ABOUT
+*****************************************************************************************************/
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-bg-diagnol {
+
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/WhatsApp%20Image%202019-07-14%20at%201.08.42%20AM.jpeg);
+    border-left: white 200px solid;
+    border-top: 700px solid transparent;
+}
+
+/****************************************************************************************************
+              WORK
+*****************************************************************************************************/
+.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+
+}
+
+.img-wrapper img {
+    transition: transform 0.5s ease;
+      width:100%;
+}
+
+/**************************************************************************************************
+             TEAM SECTION
+*****************************************************************************************************/
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    page-break-inside: 10px 0 30px 0;
+}
+
+.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.team-member-designation {
+    color: aqua;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    padding-top: 15px;
+    letter-spacing: 1px;
+}
+
+/**************************************************************************************************
+            ICON 
+*****************************************************************************************************/
+.social-list {
+    padding-left: 0px;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    r margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    font-size: 17px;
+}
+
+.icon-grey i {
+    color: #64707b;
+}
+
+.icon-white i {
+    color: #fff;
+}
+
+.icon-grey i:hover {
+    color: #34c6d3
+}
+
+/**************************************************************************************************
+             TESTIMONIALS
+*****************************************************************************************************/
+#testimonials-cover {
+    background-image: url("../img/bg-testimonials.jpg");
+    border-color: black;
+}
+
+#testimonials .content-box {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#customers-testimonials {
+    padding: 50px 0;
+}
+
+.testimonials img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.testimonials blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    color: #fff;
+    padding: 10px 150px;
+    position: relative;
+}
+
+.testimonials blockquote p {
+    color: #fff;
+}
+
+.testimonials blockquote::before {
+    content: "\201C";
+    top: -8px;
+    left: 105px;
+}
+
+.testimonials blockquote::after {
+    content: "\201D";
+    bottom: 2px;
+    right: 105px;
+}
+
+.testimonials blockquote::before,
+.testimonials blockquote::after {
+    font-size: 80px;
+    font-style: normal;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial-author p {
+    color: white;
+
+}
+
+.testimonial-author p strong {
+    display: block;
+}
+
+/**************************************************************************************************
+            PRICING
+*****************************************************************************************************/
+#pricing{ 
+    border-width: 5px;
+    border-style: solid;
+    border-color:green;
+    padding: 50px 0;
+    margin: 0 ;
+    background-image: url("../img/pricing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*parallax effect*/
+    background-attachment: fixed;
+    
+
+}
+mark{
+    background-color: forestgreen;
+}
+#pricing-title {
+    color: green;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+#img{height: 400px;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+#img_wrapper{
+    display: flex;
+  justify-content: center;
+   
+   
+}
+#pricing-title mark{
+    background-color: forestgreen;
+}
+
+
+
+
+/**************************************************************************************************
+            STATS
+*****************************************************************************************************/
+
+#stats-cover {
+    background-image: url("../img/bg-stats.jpg");
+
+}
+
+#stats-cover .content-box {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.stats-item {
+    padding: 100px 0;
+}
+
+.stats-item i {
+    color: #34c6d3;
+}
+
+.stats-item h2 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700px;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.stats-item p {
+    color: #fff;
+    text-transform: uppercase;
+
+    font-weight: 500;
+    margin-top: 0;
+}
+
+/**************************************************************************************************
+                              CLIENTS
+*****************************************************************************************************/
+.client {
+    padding: 40px 0;
+}
+
+/**************************************************************************************************
+                              CLIENTS
+*****************************************************************************************************/
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-top: 5px;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+#contact-left h3,
+#contact-right h3 {
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+
+}
+
+#contact-info {
+    background-image: url("../img/world-map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#contact-info address {
+    color: white;
+}
+
+address strong,
+#phone-fax-email strong {
+    letter-spacing: 1px;
+}
+
+.form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: white;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
